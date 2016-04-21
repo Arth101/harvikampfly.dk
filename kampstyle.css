@@ -16,6 +16,13 @@ video, div.cover {
     background-size: cover;
     transition: 1s opacity;
 }
+div.cover {
+  display: none;
+  background: url('mobileCover.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: blur(2px) grayscale(1);
+}
 .stopfade {
    opacity: .5;
 }
@@ -50,4 +57,13 @@ video, div.cover {
 }
 .hide {
   display: none;
+}
+
+@media screen and (max-width: 800px) {
+    video {
+        display: none;
+    }
+    div.cover {
+      display: block;
+    }
 }
