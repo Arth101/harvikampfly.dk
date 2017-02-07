@@ -11,14 +11,14 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Kampfly status: F16</title>
+    <title>Harvikampfly.dk</title>
     <meta charset="UTF-8">
 
     <!-- OG Meta for social media -->
     <meta property="og:title" content="Har vi nye Kampfly?"/>
     <meta property="og:type" content="website"/>
     <meta property="og:description" content="Spørgsmålet alle danskere stiller sig selv i disse dage."/>
-    <meta property="og:image" content="http://harvikampfly.dk/mobileCover.jpg" />
+    <meta property="og:image" content="http://harvikampfly.dk/assets/mobileCover.jpg" />
 
     <!-- FAVICONS -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -28,16 +28,21 @@
   <body>
     <div class="cover"></div>
     <video autoplay poster="./poster.jpg" id="bgvid" loop>
-      <source src="kampfly.webm" type="video/webm">
-      <source src="kampfly.mp4" type="video/mp4">
+      <source src="assets/F-35.webm" type="video/webm">
+      <source src="assets/F-35.mp4" type="video/mp4">
     </video>
-    <div class="text">
-      <div>
-        <h2>Har vi nye kampfly?</h2>
-        <h1>NEJ</h1>
+    <main>
+      <div class="text">
+        <div>
+          <h2>Har vi nye kampfly?</h2>
+          <h1>IKKE ENDNU</h1>
+        </div>
+        <button class="hide">Pause</button>
       </div>
-      <button class="hide">Pause</button>
-    </div>
+    </main>
+    <footer>
+      <a href="http://nytkampfly.dk/">Du kan læse om hvordan det går med Danmarks kommende kampfly her</a>
+    </footer>
     <script src="kampscript.js"></script>
 
     <script>
